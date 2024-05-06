@@ -1,6 +1,4 @@
-#from dotenv import load_dotenv
-#from os import getenv
-#load_dotenv('../env/.env') getenv('ADMINS_IDS'), getenv('IAM_TOKEN'), getenv("FOLDER_ID")
+
 TOKEN = 
 FOLDER_ID =
 IAM_TOKEN =
