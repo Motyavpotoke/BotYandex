@@ -15,7 +15,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message: Message):
-    bot.send_message(message.from_user.id, "Привет! Отправь мне голосовое сообщение или текст, и я тебе отвечу!")
+    bot.send_message(message.from_user.id, "Привет! Отправь мне голосовое сообщение или текст, и я тебе отвечу!"'Пропиши /help, чтобы увидеть значения команд')
 
 
 @bot.message_handler(commands=['feedback'])
@@ -45,7 +45,7 @@ def feedback(msg: Message):
 
 @bot.message_handler(commands=['help'])
 def help_user(message: Message):
-    bot.send_message(message.from_user.id, "Вот список команд которые есть: /debug - логи\n /stt - расшифровка "
+    bot.send_message(message.from_user.id, "Вот список команд которые есть:\n /debug - логи\n /stt - расшифровка "
                                            "голсовых сообщений\n /tts - озвучка сообщений\n /feedback - отзыв")
 
 
