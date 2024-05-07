@@ -45,7 +45,8 @@ def feedback(msg: Message):
 
 @bot.message_handler(commands=['help'])
 def help_user(message: Message):
-    bot.send_message(message.from_user.id, "Чтобы приступить к общению, отправь мне голосовое сообщение или текст")
+    bot.send_message(message.from_user.id, "Вот список команд которые есть: /debug - логи\n /stt - расшифровка "
+                                           "голсовых сообщений\n /tts - озвучка сообщений\n /feedback - отзыв")
 
 
 @bot.message_handler(commands=['debug'])
