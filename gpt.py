@@ -49,7 +49,7 @@ def ask_gpt(messages):
         return True, answer, tokens_in_answer
     except Exception as e:
         logging.error(e)
-        return False, "Ошибка при обращении к GPT",  None
+        return False, "Не удалось подключиться к GPT",  None
 
 
 if __name__ == '__main__':
